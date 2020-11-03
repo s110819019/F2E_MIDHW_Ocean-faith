@@ -7,6 +7,65 @@ html,body{
   box-sizing: border-box;
   font-size: 62.5%;
 }
+/*--------------導覽列--------------*/
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #031E36;
+  /* height: 6rem; */
+  height: 3.8vw;
+  width: 100vw;
+  display: flex;
+  transition: all 0.4s;
+}
+.nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.nav ul li{
+  display: inline;
+  padding: 1rem;
+}
+.nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+.nav-icon-link{
+  width: 5vw;
+  left: 0;
+}
+.nav-mazu-link{
+  font-family: 'Noto Sans TC', sans-serif;
+  position: absolute;
+  right: 8%;
+  padding: 0.8rem;
+  /* font-size: 2.4rem; */
+  font-size: 1.56vw;
+}
+.nav-mazu-link:hover{
+  color: #efdaa4;
+}
+.nav-wangya-link{
+  font-family: 'Noto Sans TC', sans-serif;
+  position: absolute;
+  right: 3%;
+  padding: 0.8rem;
+  /* font-size: 2.4rem; */
+  font-size: 1.56vw;
+}
+.nav-wangya-link:hover{
+  color: #efdaa4;
+}
+.nav-icon-img{
+  max-width: 50%;
+  max-height: 50%;
+  margin-top: 0.6rem;
+}
 /*--------------背景--------------*/
 .area_bg{
   width: 100vw;
@@ -18,22 +77,19 @@ html,body{
   object-fit: cover;
   object-position: center top;
 }
-.bg_textBox{
+.bg__textBox{
   position: absolute;
   /* width: 60rem;
   height: 24rem; */
   width: 40vw;
   height: 15vw;
-  /* top: 50%;
-  left: 50%; */
-  /* margin: -12rem 0 0 -30rem; */
   top: 15vw;
   left: 30vw;
   background: rgba( 3, 30, 54, 0.5);
   box-sizing: border-box;
   text-align: center
 }
-.bg_text{
+.bg__text{
   font-family: 'Noto Sans TC', sans-serif;
   /* font-size: 2.4rem; */
   font-size: 1.55vw;
@@ -43,11 +99,10 @@ html,body{
   color: #fff;
   padding: 3.6rem;
 }
-.bg_title{
+.bg__title{
   position: absolute;
   top: 11rem;
   /* left: 12rem; */
-  /* left: 7.8vw; */
   left: 10.8vw;
   font-family: DFKai-SB;
   /* font-size: 4.8rem; */
@@ -56,33 +111,28 @@ html,body{
   color: #fff;
   text-shadow: #031E36 1px 1px 5px;
 }
-.bg_title2{
+.bg__title--large{
   /* font-size: 5.6rem; */
   font-size: 3.65vw;
   top: 10rem;
   /* left: 6.4rem; */
-  /* left: 4.2vw; */
   left: 7.2vw;
 }
-.bg_title3{
+.bg__title--color{
   position: absolute;
   top: 11rem;
   /* left: 26.4rem; */
-  /* left: 17.2vw; */
   left: 20.2vw; 
   font-family: DFKai-SB;
-  /* font-size: 4.8rem; */
   text-align: left;
   color: #efdaa4;
 }
-.bg_title4{
+.bg__title--locate{
   position: absolute;
   top: 11rem;
   /* left: 36rem; */
-  /* left: 23.4vw; */
   left: 26.4vw;
   font-family: DFKai-SB;
-  /* font-size: 4.8rem; */
   text-align: left;
   color: #fff;
 }
@@ -96,7 +146,7 @@ html,body{
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
   position: relative;
 }
-.intro_title{
+.intro__title{
   font-family: 'Noto Sans TC', sans-serif;
   position: absolute;
   top: 20%;
@@ -144,7 +194,7 @@ html,body{
   position: relative;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
 }
-.mazu-img{
+.mazu__mazu-img{
   position: absolute;
   display: block;
   /* right: 5%;
@@ -156,7 +206,7 @@ html,body{
   max-height: 44vw;
   max-width: 56vw;
 }
-.mazu_title{
+.mazu__title-img{
   position: absolute;
   max-width: 20%;
   max-height: 20%;
@@ -165,7 +215,7 @@ html,body{
   top: 4vw;
   left: 5vw;
 }
-.mazu_textBox{
+.mazu__textBox{
   position: absolute;
   width: 35vw;
   /* height: 60vh; */
@@ -179,7 +229,7 @@ html,body{
   left: 3vw;
   text-align:center;
 }
-.mazu_text{
+.mazu__text{
   font-family: 'Noto Sans TC', sans-serif;
   color: #efdaa4;
   /* font-size: 2.4rem; */
@@ -222,7 +272,7 @@ html,body{
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 7px 7px;
 }
-.wangya_img{
+.wangya__wangya-img{
   position: absolute;
   display: block;
   /* left: 5%;
@@ -235,7 +285,7 @@ html,body{
   max-width: 42vw;
   border-radius: 2%;
 }
-.wangya_title{
+.wangya__title-img{
   position: absolute;
   max-width: 20%;
   max-height: 20%;
@@ -244,7 +294,7 @@ html,body{
   top: 4vw;
   left: 34vw;
 }
-.wangya_textBox{
+.wangya__textBox{
   position: absolute;
   width: 35vw;
   /* height: 60vh; */
@@ -258,7 +308,7 @@ html,body{
   right: 3vw;
   text-align:center;
 }
-.wangya_text{
+.wangya__text{
   font-family: 'Noto Sans TC', sans-serif;
   color: #efdaa4;
   /* font-size: 2.4rem; */
@@ -296,10 +346,6 @@ html,body{
 footer{
   color: ghostwhite;
   background-color: rgb(15, 76, 129);
-  /* margin: -10px; */
-  /* padding: 25px; */
-  /* margin-bottom: -20px; */
-  /* font-size: 1.6em; */
   font-size: 0.65vw;
   text-align: center;
   line-height: 3.8vw;
@@ -307,63 +353,4 @@ footer{
   height: 3.8vw;
   margin-top: 1vw;
   color: snow;
-}
-/*--------------導覽列--------------*/
-.nav{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #031E36;
-  /* height: 6rem; */
-  height: 3.8vw;
-  width: 100vw;
-  display: flex;
-  transition: all 0.4s;
-}
-.nav ul{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: right;
-}
-.nav ul li{
-  display: inline;
-  padding: 1rem;
-}
-.nav ul li .logo-link{
-  width: 5vw;
-  left: 0;
-}
-.nav ul li a{
-  text-decoration: none;
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-}
-.nav-mazu-link{
-  font-family: 'Noto Sans TC', sans-serif;
-  position: absolute;
-  right: 8%;
-  padding: 0.8rem;
-  /* font-size: 2.4rem; */
-  font-size: 1.56vw;
-}
-.nav-mazu-link:hover{
-  color: #efdaa4;
-}
-.nav-wangya-link{
-  font-family: 'Noto Sans TC', sans-serif;
-  position: absolute;
-  right: 3%;
-  padding: 0.8rem;
-  /* font-size: 2.4rem; */
-  font-size: 1.56vw;
-}
-.nav-wangya-link:hover{
-  color: #efdaa4;
-}
-.nav-icon{
-  max-width: 50%;
-  max-height: 50%;
-  margin-top: 0.6rem;
 }

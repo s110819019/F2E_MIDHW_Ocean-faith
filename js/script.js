@@ -33,8 +33,8 @@ $(document).ready(function(){
             </div>`
         );
     });
-    $(".sort_list li").click(function(){
-        $(".sort_list li").eq($(this).index()).addClass("cur").siblings().removeClass("cur");
+    $(".sort-list li").click(function(){
+        $(".sort-list li").eq($(this).index()).addClass("cur").siblings().removeClass("cur");
     });
     $(window).scroll(function () {
         var top = $('.area_intro').offset().top - 62
