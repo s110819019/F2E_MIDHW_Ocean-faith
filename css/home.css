@@ -123,8 +123,6 @@ html,body{
   top: 11rem;
   /* left: 26.4rem; */
   left: 20.2vw; 
-  font-family: DFKai-SB;
-  text-align: left;
   color: #efdaa4;
 }
 .bg__title--locate{
@@ -132,8 +130,6 @@ html,body{
   top: 11rem;
   /* left: 36rem; */
   left: 26.4vw;
-  font-family: DFKai-SB;
-  text-align: left;
   color: #fff;
 }
 /*--------------引言--------------*/
