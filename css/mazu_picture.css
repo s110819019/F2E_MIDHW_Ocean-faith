@@ -76,11 +76,11 @@ html,body{
     margin-left: 20%;
 }
 .guide__gif{
-    margin-left: 12rem;
+    margin-left: 13rem;
     overflow: hidden;
-    width: 60rem;
+    width: 50rem;
     object-fit: cover;
-    margin-top: -17rem;
+    margin-top: -12rem;
     padding-bottom: 2rem;
     position: relative;
 }
@@ -91,13 +91,14 @@ html,body{
     overflow: hidden;
     height: 15rem;
     width: 100%;
-    /* margin: 10rem -10rem; */
+    margin-left: 10rem;
   }
   .wave {
     position: absolute;
     bottom: 60%;
-    width: 450px;
-    height: 100px;
+    width: 45rem;
+    height: 10rem;
+    margin-left: 10rem;
   }
   
   .wave::before {
@@ -107,9 +108,9 @@ html,body{
     border-radius: 40%;
     position: absolute;
     left: -150%;
-    bottom: 30%;
-    width: 300rem;
-    height: 300rem;
+    bottom: 5rem;
+    width: 250rem;
+    height: 250rem;
     -webkit-animation: spin 24s linear infinite;
     -moz-animation: spin 24s linear infinite;
     animation: spin 24s linear infinite;
@@ -122,9 +123,9 @@ html,body{
     border-radius: 40%;
     position: absolute;
     left: -150%;
-    bottom: 30%;
-    width: 300rem;
-    height: 300rem;
+    bottom: 5rem;
+    width: 250rem;
+    height: 250rem;
     -webkit-animation: spin 25s linear infinite;
     -moz-animation: spin 25s linear infinite;
     animation: spin 25s linear infinite;
