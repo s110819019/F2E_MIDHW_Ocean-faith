@@ -80,6 +80,7 @@ html,body{
     object-fit: cover;
     margin-top: -17rem;
     padding-bottom: 2rem;
+    position: relative;
 }
 /*-------海浪-------*/
 .wave-container {
